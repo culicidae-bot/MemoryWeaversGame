@@ -1,0 +1,131 @@
+Design and build a fully functional web-based multiplayer word puzzle game inspired by Wordscapes, with a bluish magical design aesthetic. Players will form words from a circle of letters to fill out crossword-style puzzles. The game should support multiplayer, track high scores via leaderboards, and allow players to customize settings. All components should be beautifully aligned, responsive, and visually complete.
+
+🎮 Gameplay Mechanics:
+A circular tile board displays randomized letters.
+
+Players swipe or click-drag to form valid English words.
+
+Words automatically populate a crossword grid above the circle.
+
+Completing all words completes the level.
+
+Include:
+
+Level progression
+
+Daily Puzzle Mode
+
+Hint system (limited free hints per day)
+
+🧑‍🤝‍🧑 Multiplayer Mode:
+Real-time multiplayer using WebSockets or Firebase Realtime DB.
+
+Players can host or join a lobby using a unique room code.
+
+Everyone receives the same puzzle.
+
+The first to complete the puzzle wins.
+
+Display player progress in real-time.
+
+Basic in-room chat system (optional bonus).
+
+⚙️ Settings Menu:
+Toggle background music and sound effects
+
+Switch between themes (default: Bluish Magical Realm)
+
+Enable/disable hints
+
+Change language (start with English)
+
+Set difficulty: Beginner, Normal, Mystic Challenge
+
+📜 Terms & Conditions (on first game launch):
+Player progress and scores are stored online.
+
+The game is free and does not collect personal data.
+
+Any form of cheating, automation, or exploit will result in a ban.
+
+Players must be 13+ years old to use multiplayer.
+
+All user data is subject to deletion or reset during beta testing.
+
+🏅 Scoreboard & Leaderboard:
+Local Scoreboard: Tracks level completion, time, and accuracy.
+
+Global Leaderboard: Stores:
+
+Username
+
+Total stars/points
+
+Fastest completion times
+
+Store data using Supabase, Firebase, or a Node.js + PostgreSQL backend
+
+Display top players per:
+
+All-Time
+
+Weekly
+
+Daily
+
+🎨 Design & UI Requirements:
+Aesthetic: Bluish Magical Realm
+
+Soft gradients (sky blue, indigo, lavender)
+
+Glowing UI effects
+
+Enchanted nature backgrounds (optional image assets)
+
+UI Elements:
+
+Rounded, glowing letter tiles
+
+Hover & click animations
+
+Responsive layout for mobile and desktop
+
+Use Google Fonts for elegant typography (e.g., “Cinzel”, “Quicksand”)
+
+Ensure:
+
+Proper alignment of all elements
+
+No overlapping or broken components
+
+Smooth transitions and feedback
+
+🗂️ Suggested File Structure:
+pgsql
+Copy
+Edit
+📁 mystic-word-realms/
+├── public/
+│   ├── index.html
+│   ├── styles.css
+│   └── assets/
+│       ├── images/
+│       └── audio/
+├── src/
+│   ├── game.js
+│   ├── multiplayer.js
+│   ├── leaderboard.js
+│   ├── settings.js
+│   └── words-dictionary.json
+├── firebase/ (or supabase/)
+│   ├── config.js
+├── README.md
+🧪 Completion Requirements:
+✅ Word puzzle mechanic works exactly like Wordscapes
+✅ Fully responsive design with bluish magical theme
+✅ Working settings and audio controls
+✅ Multiplayer with hosted and joinable rooms
+✅ Working scoreboard and online leaderboard
+✅ Game deployable and testable via Replit live URL
+✅ Terms & Conditions popup on first visit
+✅ All components are polished, interactive, and aligned
